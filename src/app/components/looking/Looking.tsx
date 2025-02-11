@@ -1,5 +1,6 @@
 "use client";
 import React from 'react';
+import Image from 'next/image';  // Import the Image component
 
 const Looking: React.FC = () => {
   return (
@@ -20,11 +21,16 @@ const Looking: React.FC = () => {
             <div className="col-xl-6 col-lg-6 col-md-6">
               <div className="what-box text-center mb-35 wow fadeInUp2 animated" data-wow-delay=".3s">
                 <div className="what-box__icon mb-30">
-                  <img src="assets/img/icon/phone-operator.svg" alt="" />
+                  <Image
+                    src="assets/img/icon/phone-operator.svg"
+                    alt="Phone Operator"
+                    width={100}  // Specify the width
+                    height={100} // Specify the height
+                  />
                 </div>
                 <h3>Do you want to book?</h3>
                 <p>
-                 View our pricing here.
+                  View our pricing here.
                 </p>
                 <a href="/pricing" className="theme_btn border_btn">Book Now</a>
               </div>
@@ -32,7 +38,12 @@ const Looking: React.FC = () => {
             <div className="col-xl-6 col-lg-6 col-md-6">
               <div className="what-box text-center mb-35 wow fadeInUp2 animated" data-wow-delay=".3s">
                 <div className="what-box__icon mb-30">
-                  <img src="assets/img/icon/graduate.svg" alt="" />
+                  <Image
+                    src="assets/img/icon/graduate.svg"
+                    alt="Graduate"
+                    width={100}
+                    height={100}
+                  />
                 </div>
                 <h3>Do you want to learn here?</h3>
                 <p>
@@ -52,36 +63,65 @@ const Looking: React.FC = () => {
             <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-5">
               <div className="col">
                 <div className="single-category text-center mb-30 wow fadeInUp2 animated" data-wow-delay=".1s">
-                  <img className="mb-30" src="assets/img/category-icon/atom.svg" alt="" />
+                  <Image
+                    className="mb-30"
+                    src="assets/img/category-icon/atom.svg"
+                    alt="Ushering"
+                    width={80}
+                    height={80}
+                  />
                   <h4 className="sub-title mb-10">Ushering</h4>
                   <p>Providing professional ushers for corporate functions and events.</p>
                 </div>
               </div>
               <div className="col">
                 <div className="single-category text-center mb-30 wow fadeInUp2 animated" data-wow-delay=".2s">
-                  <img className="mb-30" src="assets/img/category-icon/web-development.svg" alt="" />
-                  <h4 className="sub-title mb-10">Model Training
-                  </h4>
+                  <Image
+                    className="mb-30"
+                    src="assets/img/category-icon/web-development.svg"
+                    alt="Model Training"
+                    width={80}
+                    height={80}
+                  />
+                  <h4 className="sub-title mb-10">Model Training</h4>
                   <p>Comprehensive training programs for aspiring models.</p>
                 </div>
               </div>
               <div className="col">
                 <div className="single-category text-center mb-30 wow fadeInUp2 animated" data-wow-delay=".3s">
-                  <img className="mb-30" src="assets/img/category-icon/atom.svg" alt="" />
+                  <Image
+                    className="mb-30"
+                    src="assets/img/category-icon/atom.svg"
+                    alt="Event Management"
+                    width={80}
+                    height={80}
+                  />
                   <h4 className="sub-title mb-10">Event Management</h4>
                   <p>Organizing and managing both fashion and other types of events.</p>
                 </div>
               </div>
               <div className="col">
                 <div className="single-category text-center mb-30 wow fadeInUp2 animated" data-wow-delay=".4s">
-                  <img className="mb-30" src="assets/img/category-icon/career-path.svg" alt="" />
+                  <Image
+                    className="mb-30"
+                    src="assets/img/category-icon/career-path.svg"
+                    alt="Model Management"
+                    width={80}
+                    height={80}
+                  />
                   <h4 className="sub-title mb-10">Model Management</h4>
                   <p>Managing and promoting models to help them succeed in the fashion industry.</p>
-                </div> 
+                </div>
               </div>
               <div className="col">
                 <div className="single-category text-center mb-30 wow fadeInUp2 animated" data-wow-delay=".5s">
- v v<img className="mb-30" src="assets/img/category-icon/graphic-tool.svg" alt="" />
+                  <Image
+                    className="mb-30"
+                    src="assets/img/category-icon/graphic-tool.svg"
+                    alt="Arts & Design"
+                    width={80}
+                    height={80}
+                  />
                   <h4 className="sub-title mb-10"><a href="course-details.html">Arts & Design</a></h4>
                   <p>136+ Courses Available</p>
                 </div>

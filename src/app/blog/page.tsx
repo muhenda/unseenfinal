@@ -6,17 +6,28 @@ import Image from "next/image";
 import Navbar from "../components/Header/page";
 import Footer from "../components/footer/page";
 import Subscribe from "../components/subscribe/subscribe";
-import { db, collection, getDocs, query, orderBy } from "../firebase"; // Import Firebase functions
+import { db, collection, getDocs, query, orderBy } from "../firebase";
+
+// Define a type for the blog post data
+interface BlogPost {
+  id: string;
+  title: string;
+  description: string;
+  imageUrl: string;
+  createdAt: { seconds: number };
+  category: string;
+  author: string;
+}
 
 const BlogPage: React.FC = () => {
-  const [blogs, setBlogs] = useState<any[]>([]);
+  const [blogs, setBlogs] = useState<BlogPost[]>([]); // Use the BlogPost type here
   const [loading, setLoading] = useState(true); // Loading state
 
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const blogCollection = collection(db, "blog"); // 'blogs' is the name of your Firestore collection
-        const blogQuery = query(blogCollection, orderBy("createdAt", "desc")); // Query blogs ordered by createdAt
+        const blogCollection = collection(db, "blog");
+        const blogQuery = query(blogCollection, orderBy("createdAt", "desc"));
         const blogSnapshot = await getDocs(blogQuery);
         const blogList = blogSnapshot.docs.map((doc) => ({
           id: doc.id,
@@ -31,11 +42,11 @@ const BlogPage: React.FC = () => {
       } catch (error) {
         console.error("Error fetching blogs from Firebase:", error);
       } finally {
-        setLoading(false); // Stop loading after fetching
+        setLoading(false);
       }
     };
 
-    fetchBlogs(); // Fetch blogs when the component mounts
+    fetchBlogs();
   }, []);
 
   return (
@@ -101,14 +112,13 @@ const BlogPage: React.FC = () => {
                   <div className="col-lg-4 col-md-6" key={post.id}>
                     <div className="z-blogs mb-30">
                       <div className="z-blogs__thumb mb-30">
-                        {/* Render the image dynamically with Next.js Image component */}
                         <Image
-                          src={post.imageUrl} // Ensure image URLs are properly formatted for Next.js Image optimization
+                          src={post.imageUrl}
                           alt={post.title}
                           width={500}
                           height={300}
                           layout="responsive"
-                          priority={index === 0} // Optionally load the first blog's image with higher priority for better LCP
+                          priority={index === 0}
                         />
                       </div>
                       <div className="z-blogs__content">

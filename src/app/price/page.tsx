@@ -1,11 +1,11 @@
-"use client";
+"use client"; // Add this to specify this is a Client Component
 
 import React from "react";
+import Image from "next/image"; // Import Image from next/image
 import Subscribe from "../components/subscribe/subscribe";
 import Navbar from "../components/Header/page";
 import Footer from "../components/footer/page";
 
-// Define the structure for the plan object
 interface Plan {
   title: string;
   subtitle: string;
@@ -74,8 +74,7 @@ const Price: React.FC = () => {
 
   return (
     <main>
-        <Navbar />
-      {/* Plan Area */}
+      <Navbar />
       <section className="plan-area pt-150 pb-120 pt-md-100 pb-md-70 pt-xs-100 pb-xs-70">
         <div className="container">
           <div className="row justify-content-center">
@@ -137,7 +136,13 @@ const Price: React.FC = () => {
                       <div className="pr__header mb-30">
                         <h2>{plan.title}</h2>
                         <h5>{plan.subtitle}</h5>
-                        <img src={plan.image} alt={plan.title} className="pr-icon" />
+                        <Image
+                          src={plan.image}
+                          alt={plan.title}
+                          className="pr-icon"
+                          width={100} // Add your desired width
+                          height={100} // Add your desired height
+                        />
                       </div>
                       <div className="pr__body">
                         <h2 className="mb-30">
@@ -157,7 +162,7 @@ const Price: React.FC = () => {
                       <div className="pr__footer mt-50">
                         <button
                           className={`theme_btn price_btn ${plan.active ? "active" : ""}`}
-                          onClick={() => alert(`Buying ${plan.title}`)} // Add your purchase logic here
+                          onClick={() => alert(`Buying ${plan.title}`)}
                           aria-label={`Buy ${plan.title} Plan`}
                         >
                           Buy Now
@@ -183,7 +188,13 @@ const Price: React.FC = () => {
                       <div className="pr__header mb-30">
                         <h2>{plan.title}</h2>
                         <h5>{plan.subtitle}</h5>
-                        <img src={plan.image} alt={plan.title} className="pr-icon" />
+                        <Image
+                          src={plan.image}
+                          alt={plan.title}
+                          className="pr-icon"
+                          width={100} // Add your desired width
+                          height={100} // Add your desired height
+                        />
                       </div>
                       <div className="pr__body">
                         <h2 className="mb-30">
@@ -203,7 +214,7 @@ const Price: React.FC = () => {
                       <div className="pr__footer mt-50">
                         <button
                           className={`theme_btn price_btn ${plan.active ? "active" : ""}`}
-                          onClick={() => alert(`Buying ${plan.title}`)} // Add your purchase logic here
+                          onClick={() => alert(`Buying ${plan.title}`)}
                           aria-label={`Buy ${plan.title} Plan`}
                         >
                           Buy Now
@@ -217,7 +228,6 @@ const Price: React.FC = () => {
           </div>
         </div>
       </section>
-      {/* Plan Area End */}
       <Subscribe />
       <Footer />
     </main>

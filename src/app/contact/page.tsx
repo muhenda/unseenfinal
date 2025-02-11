@@ -1,8 +1,9 @@
 "use client";
 
-import React, {  } from 'react';
+import React from 'react';
 import Footer from '../components/footer/page';
 import Navbar from '../components/Header/page';
+import Image from 'next/image';
 
 const ContactUsPage: React.FC = () => {
   return (
@@ -16,7 +17,6 @@ const ContactUsPage: React.FC = () => {
           paddingTop: '150px', // Adjust padding to push the page title below the navbar
         }}
       >
-       
         <div className="container">
           <div className="row align-items-end">
             <div className="col-lg-12">
@@ -41,7 +41,7 @@ const ContactUsPage: React.FC = () => {
           <div className="row align-items-center">
             <div className="col-xl-6 col-lg-6">
               <div className="contact-img mb-30">
-                <img className="img-fluid" src="assets/img/contact/01.jpg" alt="Contact Us" />
+                <Image className="img-fluid" src="/assets/img/contact/01.jpg" alt="Contact Us" width={600} height={400} />
               </div>
             </div>
             <div className="col-xl-6 col-lg-6">
@@ -52,7 +52,7 @@ const ContactUsPage: React.FC = () => {
                 </div>
                 <div className="single-contact-box mb-30">
                   <div className="contact__iocn">
-                    <img src="assets/img/icon/material-location-on.svg" alt="Location" />
+                    <Image src="/assets/img/icon/material-location-on.svg" alt="Location" width={30} height={30} />
                   </div>
                   <div className="contact__text">
                     <h5>27/2b, street road -04, New York, USA</h5>
@@ -60,7 +60,7 @@ const ContactUsPage: React.FC = () => {
                 </div>
                 <div className="single-contact-box cb-2 mb-30">
                   <div className="contact__iocn">
-                    <img src="assets/img/icon/phone-alt.svg" alt="Phone" />
+                    <Image src="/assets/img/icon/phone-alt.svg" alt="Phone" width={30} height={30} />
                   </div>
                   <div className="contact__text">
                     <h5>+000 (125) 3654 34</h5>
@@ -69,7 +69,7 @@ const ContactUsPage: React.FC = () => {
                 </div>
                 <div className="single-contact-box cb-3 mb-30">
                   <div className="contact__iocn">
-                    <img src="assets/img/icon/feather-mail.svg" alt="Email" />
+                    <Image src="/assets/img/icon/feather-mail.svg" alt="Email" width={30} height={30} />
                   </div>
                   <div className="contact__text">
                     <h5>info@example.com</h5>
@@ -82,44 +82,46 @@ const ContactUsPage: React.FC = () => {
         </div>
       </section>
       {/* Contact Us Area End */}
+
+      {/* Contact Form Area Start */}
       <section className="contact-form-area pt-150 pb-120 pt-md-100 pt-xs-100 pb-md-70 pb-xs-70">
-      <div className="container">
-        <div className="row align-items-center">
-          <div className="col-lg-6">
-            <div className="contact-form-wrapper mb-30">
-              <h2 className="mb-45">Contact Us</h2>
-              <form action="#" className="row gx-3 comments-form contact-form">
-                <div className="col-lg-6 col-md-6 mb-30">
-                  <input type="text" placeholder="Full Name" />
-                </div>
-                <div className="col-lg-6 col-md-6 mb-30">
-                  <input type="text" placeholder="Last Name" />
-                </div>
-                <div className="col-lg-6 col-md-6 mb-30">
-                  <input type="text" placeholder="Phone Number" />
-                </div>
-                <div className="col-lg-6 col-md-6 mb-30">
-                  <input type="text" placeholder="Address" />
-                </div>
-                <div className="col-lg-12 mb-30">
-                  <input type="text" placeholder="Email Name" />
-                </div>
-                <div className="col-lg-12 mb-30">
-                  <textarea name="commnent" id="commnent" cols={30} rows={10} placeholder="Write a Message"></textarea>
-                </div>
-              </form>
-              <button className="theme_btn message_btn mt-20">Send Message</button>
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-6">
+              <div className="contact-form-wrapper mb-30">
+                <h2 className="mb-45">Contact Us</h2>
+                <form action="#" className="row gx-3 comments-form contact-form">
+                  <div className="col-lg-6 col-md-6 mb-30">
+                    <input type="text" placeholder="Full Name" />
+                  </div>
+                  <div className="col-lg-6 col-md-6 mb-30">
+                    <input type="text" placeholder="Last Name" />
+                  </div>
+                  <div className="col-lg-6 col-md-6 mb-30">
+                    <input type="text" placeholder="Phone Number" />
+                  </div>
+                  <div className="col-lg-6 col-md-6 mb-30">
+                    <input type="text" placeholder="Address" />
+                  </div>
+                  <div className="col-lg-12 mb-30">
+                    <input type="text" placeholder="Email Name" />
+                  </div>
+                  <div className="col-lg-12 mb-30">
+                    <textarea name="commnent" id="commnent" cols={30} rows={10} placeholder="Write a Message"></textarea>
+                  </div>
+                </form>
+                <button className="theme_btn message_btn mt-20">Send Message</button>
+              </div>
             </div>
-          </div>
-          <div className="col-lg-6">
-            <div className="contact-img contact-img-02 mb-30">
-              <img className="img-fluid" src="assets/img/contact/02.jpg" alt="" />
+            <div className="col-lg-6">
+              <div className="contact-img contact-img-02 mb-30">
+                <Image className="img-fluid" src="/assets/img/contact/02.jpg" alt="" width={600} height={400} />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-     
+      </section>
+      {/* Contact Form Area End */}
 
       {/* Contact Map Area Start */}
       <section className="contact-map-area">
