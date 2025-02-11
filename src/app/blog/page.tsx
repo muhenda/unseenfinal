@@ -101,13 +101,14 @@ const BlogPage: React.FC = () => {
                   <div className="col-lg-4 col-md-6" key={post.id}>
                     <div className="z-blogs mb-30">
                       <div className="z-blogs__thumb mb-30">
-                        {/* Render the image dynamically */}
+                        {/* Render the image dynamically with Next.js Image component */}
                         <Image
-                          src={post.imageUrl}
-                          alt="blog-img"
+                          src={post.imageUrl} // Ensure image URLs are properly formatted for Next.js Image optimization
+                          alt={post.title}
                           width={500}
                           height={300}
                           layout="responsive"
+                          priority={index === 0} // Optionally load the first blog's image with higher priority for better LCP
                         />
                       </div>
                       <div className="z-blogs__content">
