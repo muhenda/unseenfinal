@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
+import Script from 'next/script';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -45,26 +45,27 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
         
-        {/* Adding scripts with next.js <Script> tag */}
-        <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
-        <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
-        <script src="assets/js/popper.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/owl.carousel.min.js"></script>
-        <script src="assets/js/isotope.pkgd.min.js"></script>
-        <script src="assets/js/slick.min.js"></script>
-        <script src="assets/js/metisMenu.min.js"></script>
-        <script src="assets/js/jquery.nice-select.js"></script>
-        <script src="assets/js/ajax-form.js"></script>
-        <script src="assets/js/wow.min.js"></script>
-        <script src="assets/js/jquery.counterup.min.js"></script>
-        <script src="assets/js/waypoints.min.js"></script>
-        <script src="assets/js/jquery.scrollUp.min.js"></script>
-        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-        <script src="assets/js/jquery.magnific-popup.min.js"></script>
-        <script src="assets/js/jquery.easypiechart.js"></script>
-        <script src="assets/js/plugins.js"></script>
-        <script src="assets/js/main.js"></script>
+        {/* Adding external scripts */}
+        <Script src="assets/js/vendor/modernizr-3.5.0.min.js" strategy="beforeInteractive" />
+          <Script src="assets/js/vendor/jquery-2.2.4.min.js" strategy="beforeInteractive" />
+          <Script src="assets/js/popper.min.js" strategy="beforeInteractive" />
+          <Script src="assets/js/bootstrap.min.js" strategy="beforeInteractive" />
+          <Script src="assets/js/owl.carousel.min.js" strategy="beforeInteractive" />
+          <Script src="assets/js/isotope.pkgd.min.js" strategy="beforeInteractive" />
+          <Script src="assets/js/slick.min.js" strategy="beforeInteractive" />
+          <Script src="assets/js/metisMenu.min.js" strategy="beforeInteractive" />
+          <Script src="assets/js/jquery.nice-select.js" strategy="beforeInteractive" />
+          <Script src="assets/js/ajax-form.js" strategy="beforeInteractive" />
+          <Script src="assets/js/wow.min.js" strategy="beforeInteractive" />
+          <Script src="assets/js/jquery.counterup.min.js" strategy="beforeInteractive" />
+          <Script src="assets/js/waypoints.min.js" strategy="beforeInteractive" />
+          <Script src="assets/js/jquery.scrollUp.min.js" strategy="beforeInteractive" />
+          <Script src="assets/js/imagesloaded.pkgd.min.js" strategy="beforeInteractive" />
+          <Script src="assets/js/jquery.magnific-popup.min.js" strategy="beforeInteractive" />
+          <Script src="assets/js/jquery.easypiechart.js" strategy="beforeInteractive" />
+          <Script src="assets/js/plugins.js" strategy="beforeInteractive" />
+          <Script src="assets/js/main.js" strategy="beforeInteractive" />
+        
       </body>
     </html>
   );
