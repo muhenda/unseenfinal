@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Unseen Model Agency",
-  description: "Empowering talents, delivering excellence in modeling, fashion, and events.",
+  description: "Empowering talents, delivering excellence in modeling, fashion, market and events.",
 };
 
 export default function RootLayout({
