@@ -37,27 +37,27 @@ export default function RootLayout({
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
-        
-        {/* Add external scripts asynchronously */}
-        <Script src="assets/js/vendor/modernizr-3.5.0.min.js" strategy="afterInteractive" />
-        <Script src="assets/js/vendor/jquery-2.2.4.min.js" strategy="afterInteractive" />
-        <Script src="assets/js/popper.min.js" strategy="afterInteractive" />
-        <Script src="assets/js/bootstrap.min.js" strategy="afterInteractive" />
-        <Script src="assets/js/owl.carousel.min.js" strategy="afterInteractive" />
-        <Script src="assets/js/isotope.pkgd.min.js" strategy="afterInteractive" />
-        <Script src="assets/js/slick.min.js" strategy="afterInteractive" />
-        <Script src="assets/js/metisMenu.min.js" strategy="afterInteractive" />
-        <Script src="assets/js/jquery.nice-select.js" strategy="afterInteractive" />
-        <Script src="assets/js/ajax-form.js" strategy="afterInteractive" />
-        <Script src="assets/js/wow.min.js" strategy="afterInteractive" />
-        <Script src="assets/js/jquery.counterup.min.js" strategy="afterInteractive" />
-        <Script src="assets/js/waypoints.min.js" strategy="afterInteractive" />
-        <Script src="assets/js/jquery.scrollUp.min.js" strategy="afterInteractive" />
-        <Script src="assets/js/imagesloaded.pkgd.min.js" strategy="afterInteractive" />
-        <Script src="assets/js/jquery.magnific-popup.min.js" strategy="afterInteractive" />
-        <Script src="assets/js/jquery.easypiechart.js" strategy="afterInteractive" />
-        <Script src="assets/js/plugins.js" strategy="afterInteractive" />
-        <Script src="assets/js/main.js" strategy="afterInteractive" />
+
+        {/* External scripts loaded asynchronously */}
+        <Script src="assets/js/vendor/modernizr-3.5.0.min.js" strategy="beforeInteractive" />
+        <Script src="assets/js/vendor/jquery-2.2.4.min.js" strategy="beforeInteractive" />
+        <Script src="assets/js/popper.min.js" strategy="beforeInteractive" />
+        <Script src="assets/js/bootstrap.min.js" strategy="beforeInteractive" />
+        <Script src="assets/js/owl.carousel.min.js" strategy="beforeInteractive" />
+        <Script src="assets/js/isotope.pkgd.min.js" strategy="beforeInteractive" />
+        <Script src="assets/js/slick.min.js" strategy="beforeInteractive" />
+        <Script src="assets/js/metisMenu.min.js" strategy="beforeInteractive" />
+        <Script src="assets/js/jquery.nice-select.js" strategy="beforeInteractive" />
+        <Script src="assets/js/ajax-form.js" strategy="beforeInteractive" />
+        <Script src="assets/js/wow.min.js" strategy="beforeInteractive" />
+        <Script src="assets/js/jquery.counterup.min.js" strategy="beforeInteractive" />
+        <Script src="assets/js/waypoints.min.js" strategy="beforeInteractive" />
+        <Script src="assets/js/jquery.scrollUp.min.js" strategy="beforeInteractive" />
+        <Script src="assets/js/imagesloaded.pkgd.min.js" strategy="beforeInteractive" />
+        <Script src="assets/js/jquery.magnific-popup.min.js" strategy="beforeInteractive" />
+        <Script src="assets/js/jquery.easypiechart.js" strategy="beforeInteractive" />
+        <Script src="assets/js/plugins.js" strategy="beforeInteractive" />
+        <Script src="assets/js/main.js" strategy="beforeInteractive" />
       </body>
     </html>
   );

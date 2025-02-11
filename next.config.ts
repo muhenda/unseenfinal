@@ -3,12 +3,12 @@ import type { Configuration } from 'webpack';
 
 const nextConfig: NextConfig = {
   images: {
-    remotePatterns: [ // Use remotePatterns, NOT domains
+    remotePatterns: [
       {
         protocol: 'https',
         hostname: 'firebasestorage.googleapis.com',
-        port: '', // Can be an empty string
-        pathname: '/**', // Or a more specific path if needed
+        port: '',
+        pathname: '/**',
       },
     ],
   },
