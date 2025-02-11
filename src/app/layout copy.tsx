@@ -34,7 +34,7 @@ export default function RootLayout({
         <meta name="description" content="Empowering talents, delivering excellence in modeling, fashion, and events." />
         <link rel="apple-touch-icon" href="/logo192.png" />
         
-        {/* Link to Stylesheets */}
+        {/* Link to Stylesheets 
         <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
         <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
         <link rel="stylesheet" href="assets/css/animate.css" />
@@ -46,7 +46,7 @@ export default function RootLayout({
         <link rel="stylesheet" href="assets/css/nice-select.css" />
         <link rel="stylesheet" href="assets/css/slick.css" />
         <link rel="stylesheet" href="assets/css/spacing.css" />
-        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/main.css" />*/}
         
         {/* Favicon */}
         <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
