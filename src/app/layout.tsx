@@ -35,8 +35,11 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/logo192.png" />
         
         
+        
         {/* Favicon */}
         <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+
         <title>Unseen Model Agency</title>
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>

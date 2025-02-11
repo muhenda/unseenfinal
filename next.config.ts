@@ -3,10 +3,17 @@ import type { Configuration } from 'webpack';
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ['firebasestorage.googleapis.com'],
+    remotePatterns: [ // Use remotePatterns, NOT domains
+      {
+        protocol: 'https',
+        hostname: 'firebasestorage.googleapis.com',
+        port: '', // Can be an empty string
+        pathname: '/**', // Or a more specific path if needed
+      },
+    ],
   },
   webpack: (config: Configuration) => {
-    config.module?.rules?.push({ // Use optional chaining and nullish coalescing
+    config.module?.rules?.push({
       test: /\.js$/,
       exclude: /(src\/app\/assets\/js|node_modules)/,
     });
