@@ -41,7 +41,7 @@ const ContactUsPage: React.FC = () => {
           <div className="row align-items-center">
             <div className="col-xl-6 col-lg-6">
               <div className="contact-img mb-30">
-                <Image className="img-fluid" src="/assets/img/contact/06.PNG" alt="Contact Us" width={600} height={400} />
+                <Image className="img-fluid" src="/assets/img/contact/01.png" alt="Contact Us" width={600} height={400} />
               </div>
             </div>
             <div className="col-xl-6 col-lg-6">
@@ -115,7 +115,7 @@ const ContactUsPage: React.FC = () => {
             </div>
             <div className="col-lg-6">
               <div className="contact-img contact-img-02 mb-30">
-                <Image className="img-fluid" src="/assets/img/contact/02.jpg" alt="" width={600} height={400} />
+                <Image className="img-fluid" src="/assets/img/contact/02.png" alt="" width={600} height={400} />
               </div>
             </div>
           </div>
