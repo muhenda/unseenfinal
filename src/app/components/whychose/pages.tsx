@@ -63,7 +63,7 @@ const Whychoose: React.FC = () => {
                   {/* Video Section */}
                   <div className="video-wrapper">
                     <a
-                      href="https://youtu.be/uLgbzFQuiy4"
+                      href="https://www.youtube.com/watch?v=6YlZHR4b-WU"
                       className="popup-video"
                       target="_blank"
                       rel="noopener noreferrer"

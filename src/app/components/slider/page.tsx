@@ -24,7 +24,7 @@ const Slider: React.FC = () => {
           <div className="row align-items-center">
             <div className="col-xl-6 col-lg-6 order-last order-lg-first">
               <div className="slider__img__box mb-50 pr-30">
-                <Image className="img-one mt-55 pr-70" src="/assets/img/slider/01.png" alt="Slider Image 1" width={500} height={500} />
+                <Image className="img-one mt-55 pr-70" src="/assets/img/slider/01.PNG" alt="Slider Image 1" width={500} height={500} />
                 
                 
                 <Image className="slide-shape img-four" src="/assets/img/shape/dot-box-1.svg" alt="Dot Box 1" width={100} height={100} />
