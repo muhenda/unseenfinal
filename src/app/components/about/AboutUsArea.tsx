@@ -17,13 +17,7 @@ const AboutUsArea: React.FC = () => {
                 width={600}
                 height={400}
               />
-              <Image
-                className="about-img about_01"
-                src="/assets/img/about/01.png"
-                alt="about-img"
-                width={400}
-                height={300}
-              />
+              
               <Image
                 className="about-img about_02"
                 src="/assets/img/about/02.png"
@@ -31,13 +25,7 @@ const AboutUsArea: React.FC = () => {
                 width={400}
                 height={300}
               />
-              <Image
-                className="about-img about_03"
-                src="/assets/img/slider/earth-bg.svg"
-                alt="about-img"
-                width={600}
-                height={400}
-              />
+              
             </div>
           </div>
           <div className="col-lg-5">
