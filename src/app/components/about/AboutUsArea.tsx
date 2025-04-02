@@ -18,13 +18,7 @@ const AboutUsArea: React.FC = () => {
                 height={400}
               />
               
-              <Image
-                className="about-img about_02"
-                src="/assets/img/about/02.png"
-                alt="about-img"
-                width={400}
-                height={300}
-              />
+             
               
             </div>
           </div>
