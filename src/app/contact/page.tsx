@@ -48,14 +48,14 @@ const ContactUsPage: React.FC = () => {
               <div className="contact-wrapper pl-75 mb-30">
                 <div className="section-title mb-30">
                   <h2>Get In Touch With Us</h2>
-                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy eirmod tempor invidunt ut labore et dolore magn aliq erat.</p>
+                  <p>Contact us today for all your services.</p>
                 </div>
                 <div className="single-contact-box mb-30">
                   <div className="contact__iocn">
                     <Image src="/assets/img/icon/material-location-on.svg" alt="Location" width={30} height={30} />
                   </div>
                   <div className="contact__text">
-                    <h5>27/2b, street road -04, New York, USA</h5>
+                    <h5>Fort Portal, Uganda</h5>
                   </div>
                 </div>
                 <div className="single-contact-box cb-2 mb-30">
@@ -63,8 +63,8 @@ const ContactUsPage: React.FC = () => {
                     <Image src="/assets/img/icon/phone-alt.svg" alt="Phone" width={30} height={30} />
                   </div>
                   <div className="contact__text">
-                    <h5>+000 (125) 3654 34</h5>
-                    <h5>+000 (125) 3654 34</h5>
+                    <h5>+256 705 973257</h5>
+                    
                   </div>
                 </div>
                 <div className="single-contact-box cb-3 mb-30">
@@ -72,8 +72,8 @@ const ContactUsPage: React.FC = () => {
                     <Image src="/assets/img/icon/feather-mail.svg" alt="Email" width={30} height={30} />
                   </div>
                   <div className="contact__text">
-                    <h5>info@example.com</h5>
-                    <h5>info2@example.com</h5>
+                    <h5>unseenmodelingagency2022@gmail.com</h5>
+                    
                   </div>
                 </div>
               </div>
